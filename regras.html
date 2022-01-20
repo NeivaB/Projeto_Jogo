@@ -1,0 +1,171 @@
+<html5>
+         <div id="pagina2">
+    <h1>JOGO DE DAMAS</h1>
+    <br>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/International_draughts.jpg" alt="DAMAS">
+
+    <h2>Menu do Site</h2>
+    <ul>
+        <li><a href="Index.html">Página Inicial</a></li>
+        <li><a href="regras.html">regras do jogo</a></li>
+    </ul>
+    <div class="tabela">
+        <table width="400" border="2">
+            <thead>
+                <tr>
+                    <th>Regras Gerais</th>
+                    <th>Regras Pedras</th>
+                    <th>Regras Damas</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>O lance inicial cabe sempre a quem estiver com as peças brancas.</td>
+                    <td>A pedra anda só para frente, uma casa de cada vez. Quando a pedra atinge a oitava linha do
+                        tabuleiro ela é promovida à dama.</td>
+                    <td>A dama é uma peça de movimentos mais amplos. Ela anda para frente e para trás, quantas casas
+                        quiser. A dama não pode saltar uma peça da mesma cor.</td>
+                </tr>
+
+                <tr>
+                    <td>A captura é obrigatória.</td>
+                    <td>A pedra captura a dama e a dama captura a pedra. Pedra e dama têm o mesmo valor para capturarem
+                        ou serem capturadas.</td>
+                    <td>Duas ou mais peças juntas, na mesma diagonal, não podem ser capturadas, nem pela dama.</td>
+                </tr>
+                <tr>
+                    <td>Se no mesmo lance se apresentar mais de um modo de capturar, é obrigatório executar o lance que
+                        capture o maior número de peças (Lei da Maioria).</td>
+                    <td>A pedra que durante o lance de captura de várias peças, apenas passe por qualquer casa de
+                        coroação, sem aí parar, não será promovida à dama.</td>
+                    <td>A pedra e a dama podem capturar tanto para frente como para trás, uma ou mais peças.</td>
+                </tr>
+                <tr>
+                    <td>Empate: Após 20 lances sucessivos de damas, sem captura ou deslocamento de pedra, a partida é
+                        declarada empatada.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> Finais de: 2 damas contra 2 damas; 2 damas contra uma; 2 damas contra uma dama e uma pedra; uma
+                        dama contra uma dama e uma dama contra uma dama e uma pedra, são declarados empatados após 5
+                        lances.</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+    </hr>
+    <h2>FORMULÁRIO PARA CADASTRO DE JOGADORES</h2>
+    <form action="https://api-dwi.herokuapp.com/api/examples" method="post">
+        <div>
+            Jogador 1:
+            <input type="text" placeholder=" Seu nick ingame" name="jogador1">
+            Escolhas :
+            <select name="corPedrasj1">
+                <option value="">Selecione a cor da sua pedra</option>
+                <option value="pedras brancas" >PEDRAS BRANCAS</option>
+                <option value="pedras pretas" >PEDRAS PRETAS</option>
+            </select>
+            <div>
+                <div>
+                    Deseja se inscrever para qual campeonato?
+
+                    <input type="radio" id=mundial name="tipoCampeonatoj1" value="Mundial" />
+                    <label for="mundial"> MUNDIAL</label>
+                    <input type="radio" id=nacional name="tipoCampeonatoj1" value="Nacional" />
+                    <label for="nacional"> NACIONAL</label>
+                    <input type="radio" id=regional name="tipoCampeonatoj1" value="Regional" />
+                    <label for="regional"> REGIONAL</label>
+                </div>
+
+                Como deseja participar?
+                <input type="radio" id=j1profissional name="j1ParticiparComo" value="Profissional" />
+                <label for="profissional"> PROFISSIONAL</label>
+                <input type="radio" id=j1amador name="j1ParticiparComo" value="Amador" />
+                <label for="amador"> AMADOR</label>
+            </div>
+        </div>
+        <Br>
+        <div>
+            Jogador 2:
+            <input type="text" placeholder=" Seu nick ingame" name="jogador2">
+            Escolhas :
+            <select name=j2pedras>
+                <option value="">Selecione a cor da sua pedra</option>
+                <option value="pedras brancas" >PEDRAS BRANCAS</option>
+                <option value="pedras pretas" >PEDRAS PRETAS</option>
+            </select>
+
+            <div>
+                Deseja se inscrever para qual campeonato?
+                <input type="radio" id=mundial name="tipoCampeonatoj2" value="Mundial" />
+                <label for="mundial"> MUNDIAL</label>
+                <input type="radio" id=nacional name="tipoCampeonatoj2" value="Nacional" />
+                <label for="nacional"> NACIONAL</label>
+                <input type="radio" id=regional name="tipoCampeonatoj2" value="Regional" />
+                <label for="regional"> REGIONAL</label>
+            </div>
+
+            <div>
+                Como deseja participar?
+                <input type="radio" id=j2profissional name="j2participarComo:" value="Profissional" />
+                <label for="profissional"> PROFISSIONAL</label>
+                <input type="radio" id=j2amador name="j2participarComo:" value="Amador" />
+                <label for="amador"> AMADOR</label>
+            </div>
+
+        </div>
+        <hr />
+
+        <div>
+            <div>
+                Observações que achar relevantes:
+            </div>
+            <textarea name="observacoes" id="observacoes" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <button type="submit">CADASTRAR</button>
+    </form>
+
+</div>
+
+    </html>
+
+    <style>
+        img {
+            width: 200px;
+        }
+
+        .tabela {
+            padding-left: 20px;
+        }
+
+        thead {
+            background-color: gray
+        }
+
+        th {
+            color: black;
+        }
+
+        tbody {
+
+            background-color: lightslategrey
+        }
+        body {
+            border:1px solid;
+            padding:1rem;
+        }
+        #pagina2{
+            border:1px solid;
+            background-color: lightgoldenrodyellow;
+        }
+
+    </style>
